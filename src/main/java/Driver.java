@@ -15,7 +15,7 @@ public class Driver {
     public WebDriver createDriver() {
 
         if (System.getProperty("os").equals("LINUX")){
-            System.setProperty("webdriver.chrome.driver", "./src/drivers/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver");
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("disable-infobars");
             chromeOptions.addArguments("--headless");
