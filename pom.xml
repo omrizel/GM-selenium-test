@@ -30,6 +30,9 @@
                 <version>2.22.0</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
+                    <systemPropertyVariables>
+                        <os>${os}</os>
+                    </systemPropertyVariables>
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
                         <suiteXmlFile>suite.xml</suiteXmlFile>
