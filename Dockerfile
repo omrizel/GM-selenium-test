@@ -12,3 +12,4 @@ COPY . /tmp
 #RUN chmod g+wrx WORKDIR/src/drivers/chromedriver
 
 #RUN mvn -f tmp/ test -Dos="LINUX"
+RUN tmp/ ls
