@@ -8,6 +8,6 @@ RUN echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" 
 RUN apt-get -y update
 RUN apt-get -y install google-chrome-stable
 
-COPY ~/GM-selenium-test/. /tmp
+COPY /home/omri/GM-selenium-test/. /tmp
 
 RUN mvn -f tmp/ test -Dos="LINUX"
