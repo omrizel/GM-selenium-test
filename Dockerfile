@@ -1,6 +1,6 @@
 FROM maven:3.6.3-jdk-11-openj9
 
-RUN apt-transport-https
+
 RUN apt --assume-yes curl
 RUN apt-get update && apt-get install -y gnupg2
 RUN curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
