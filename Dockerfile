@@ -9,7 +9,7 @@ RUN apt-get -y update
 RUN apt-get -y install google-chrome-stable
 
 COPY . /tmp
-RUN chmod g+wrx ./src/drivers/chromedriver
+RUN chmod g+wrx tmp/src/drivers/chromedriver
 
 RUN mvn -f tmp/ test -Dos="LINUX"
 #RUN tmp/ ls
